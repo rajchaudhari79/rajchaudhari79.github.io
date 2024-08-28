@@ -1,86 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raj Chaudhari - Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <!----Font awesome cdn  font icon css -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-</head>
-<body>
-     <div class="hero-header">
-        <div class="wrapper">
-            <header>
-                <div class="logo">
-                    <i class="fa-solid fa-r"></i>
-                    <div class="logo-text">RAJ CHAUDHARI</div>
-                </div>
-                <nav>
-                    <div class="togglebtn">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </div>
-                    <ul class="navlinks">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="https://www.linkedin.com/in/rajchaudhari79/" target="_blank">LinkedIn Profile</a></li>
-                        <li><a href="https://docs.google.com/document/d/13I9j6TOtoNy27I--3QdCGd1clV-1cziw/edit?usp=sharing&ouid=102232177663152054557&rtpof=true&sd=true" target="_blank">Resume</a></li>
-                        <li><a href="#">Contact</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <div class="container">
-                 <div class="hero-pic">
-                    <img src="images/main_photo.jpg" alt="profile pic">
-                 </div>
-                 <div class="hero-text">
-                    <h5>Hi I'm <span class="input">...</span></h5>
-                    <h1>Raj Chaudhari</h1>
-                    <p> I have a passion for technology and innovation. I have developed and published
-                    Android applications on the Google Play Store, demonstrating my ability to translate
-                    ideas into functional and user-friendly digital solutions. This experience has honed
-                    my skills in mobile app development, project management, and problem-solving. 
-                    Moreover, I am a proud cricket player, representing the Gujarat Cricket Association. 
-                    Cricket has taught me the importance of teamwork, discipline, and resilience. These 
-                    qualities define my approach to sports aand also influence my professional 
-                    and academic endeavors.
-                    </p>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                    <div class="btn-group">
-                       <a href="https://docs.google.com/document/d/13I9j6TOtoNy27I--3QdCGd1clV-1cziw/edit?usp=sharing&ouid=102232177663152054557&rtpof=true&sd=true" target="_blank" class="btn active">Download CV</a>
-                       <a href="#" class="btn">Contact</a>
-                    </div>
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-                    <div class="social">
-                        <a href="https://www.facebook.com/rajchaudhari2003" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="https://www.linkedin.com/in/rajchaudhari79/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://www.instagram.com/rajchaudhari_251/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                 </div>
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" crossorigin="">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>RAJ CHAUDHARI - Portfolio</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">
+               <span class="nav__logo-circle">RC</span>
+               <span class="nav__logo-name">RAJ CHAUDHARI</span>
+            </a>
+            <div class="nav__menu" id="nav-menu">
+               <span class="nav__title">Menu</span>
+
+               <h3 class="nav__name">RAJ</h3>
+               <ul class="nav__list">
+                  <li class="nav__item">
+                     <a href="#home" class="nav__link">Home</a>
+                  </li>
+
+                  <li class="nav__item">
+                     <a href="#about" class="nav__link">About Me</a>
+                  </li>
+                  
+                  <li class="nav__item">
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+                  
+                  <li class="nav__item">
+                     <a href="#contact" class="nav__link">Contact Me</a>
+                  </li>
+               </ul>
+
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-line"></i>
+               </div>
+               </div>
+
+               <div class="nav__buttons">
+                  <di class="nav__toggle" id="nav-toggle">
+                     <i class="ri-menu-2-fill"></i>
+                  </di>
+               </div>
             </div>
-        </div>
-     </div>
-     <!---typed js for typing text effect-->
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
-     <script>
-        /** creating button click show hide navbar **/
-        var togglebtn=document.querySelector(".togglebtn");
-        var nav=document.querySelector(".navlinks");
-        var links=document.querySelector(".navlinks li");
+         </nav>
+      </header>
 
-        togglebtn.addEventListener("click", function(){
-            this.classList.toggle("click");
-            nav.classList.toggle("open");
-        })
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <h1 class="home__name">
+                  RAJ CHAUDHARI
+               </h1>
 
-        var typed=new Typed(".input",{
-            strings:["App Developer","Cricketer","Data Analyst"],
-            typedSpeed:60,
-            backSpeed:55,
-            loop:true
-        })
-     </script>
-</body>
+               <div class="home__prefil">
+                  <div class="home__image">
+                     <img src="assets/img/home-perfil.jpg" alt="image" class="home__img">
+                     <div class="home__shadow"></div>
+
+                     <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
+                     <img src="assets/img/random-lines.svg" alt="" class="home__line">
+
+                     <div class="geometric-box"></div>
+                  </div>
+
+                  <div class="home__social">
+                     <a href="https://www.instagram.com/raaaj.k.raaaz/" target="_blank" class="home__social-link">
+                        <i class="ri-instagram-fill"></i>
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/rajchaudhari79" target="_blank" class="home__social-link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+
+                     <a href="https://www.github.com/rajchaudhari79" target="_blank" class="home__social-link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                  </div>
+               </div>
+
+               <div class="home__info">
+                  <p class="home__description">
+                  <b>I am an IMBA student, State-Level Cricketer (GCA), and Android App Developer with a passion for Data
+                  Analysis.</b> I have developed and published two Android apps, and my skills in data science and 
+                  visualization empower me to deliver insights that drive business decisions. Balancing academics,
+                  sports, and tech, I bring a unique blend of discipline, creativity, and analytical thinking.
+                  </p>
+
+                  <a href="#about" class="home__scroll">
+                     <div class="home__scroll-box">
+                     <i class="ri-arrow-down-s-line"></i>
+                     </div>
+                     <span class="home__scroll-text">Scroll Down</span>
+                  </a>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <h2 class="section__title-1">
+                  About Me
+               </h2>
+
+               <div class="about__prefil">
+                  <div class="about__image">
+                     <img src="assets/img/about-perfil.jpg" alt="image" class="about__img">
+
+                     <div class="about__shadow"></div>
+
+                     <div class="geometric-box"></div>
+                     <img src="assets/img/random-lines.svg" alt="" class="about__line">
+                     <div class="about__box"></div>
+                  </div>
+               </div>
+               
+               <div class="about__info">
+                  <p class="about__description">
+                     As a dedicated and versatile individual, I am currently pursuing an <b>Integrated MBA in
+                      Business Economics and Management</b> from <b>B.K. School of Professional and Management 
+                     Studies</b>. My academic journey has equipped me with a strong foundation in business 
+                     principles and strategic thinking, preparing me for dynamic roles in the corporate world.
+                  </p>
+
+                  <ul class="about__list">
+                     <li class="about__item">
+                        <b>My Skils Are:</b> Data Analysis, Microsoft Office,
+                        IT Management, Git and GitHub, Tableau and Power BI.
+                     </li>
+                  </ul>
+
+                  <div class="about__buttons">
+                     <a href="#contact" class="button">
+                        <i class="ri-mail-send-line"></i> Contact Me
+                     </a>
+
+                     <a href="https://www.linkedin.com/in/rajchaudhari79" target="_blank" class="button__ghost">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== SERVICES ====================-->
+         <section class="services section">
+            
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src=""></script>
+      
+      <!--=============== EMAIL JS ===============-->
+      
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
 </html>
